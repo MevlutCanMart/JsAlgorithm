@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.js">
+    <title>Document</title>
+   
+</head>
+<body>
+<script>
+//     function siralama(){
+        
+//     var x = prompt("Başlangiç değerini giriniz:");
+//     var n = prompt("Bitiş değerini giriniz:");
+//     for(var i=x; i<=n;i++) {
+//         console.log(i);
+//     }
+
+// }
+
+//     siralama()
+
+
+
+
+
+
+
+// var n = parseInt(prompt("Fibonacci dizisini kaç terime kadar bulmak istiyorsunuz?:"));
+
+// // İlk iki Fibonacci terimini tanımla
+// var fibArray = [1, 1];
+
+// // Fibonacci dizisini hesapla
+// for (var i = 1; i < n; i++) {
+//     var nextTerm = fibArray[i - 1] + fibArray[i - 2];
+//     fibArray.push(nextTerm);
+// }
+
+// // Fibonacci dizisini ekrana yazdır
+// console.log("Fibonacci Dizisi:");
+// console.log(fibArray.join(", "));
+
+
+
+
+
+
+
+
+
+
+
+// var sayi = parseInt(prompt("Bir sayı giriniz:"));
+
+// // Tam bölenleri bulan fonksiyon
+// function tamBolenleriBul(sayi) {
+//     var tamBolenler = [];
+
+//     for (var i = 1; i <= sayi; i++) {
+//         if (sayi % i === 0) {
+//             tamBolenler.push(i);
+//         }
+//     }
+
+//     return tamBolenler;
+// }
+
+// // Tam bölenleri bul ve ekrana yazdır
+// var bolenler = tamBolenleriBul(sayi);
+
+// console.log(sayi + " sayısının tam bölenleri:");
+// console.log(bolenler.join(", "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var sayi1 = parseFloat(prompt("Birinci sayıyı giriniz:"));
+// var sayi2 = parseFloat(prompt("İkinci sayıyı giriniz:"));
+// var sayi3 = parseFloat(prompt("Üçüncü sayıyı giriniz:"));
+
+// // Girilen sayıları büyüklük sırasına göre sırala
+// var siraliSayilar = [sayi1, sayi2, sayi3].sort(function(a, b) {
+//     return a - b;
+// });
+
+// // Orta sayıyı bul ve ekrana yazdır
+// var ortancaSayi = siraliSayilar[1];
+
+// console.log("Büyüklük sırasına göre ortanca sayı: " + ortancaSayi);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var A = parseInt(prompt("A sayısını giriniz:"));
+// var B = parseInt(prompt("B sayısını giriniz:"));
+
+// // Bölme işlemi yapmadan kalanlı bölme algoritması
+// function kalanliBolme(a, b) {
+//     if (b === 0) {
+//         console.log("Bölen sıfır olamaz.");
+//         return;
+//     }
+
+//     var kalan = a;
+//     while (kalan >= b) {
+//         kalan -= b;
+//     }
+
+//     console.log("Kalan: " + kalan);
+// }
+
+// // Fonksiyonu çağır
+// kalanliBolme(A, B);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var A = parseInt(prompt("A sayısını giriniz:"));
+// var B = parseInt(prompt("B sayısını giriniz:"));
+
+// // Çarpma işlemi yapmadan çarpma algoritması
+// function carpmaIslemi(a, b) {
+//     var sonuc = 0;
+
+//     // İlk sayıyı ikinci sayı kadar topla
+//     for (var i = 0; i < Math.abs(b); i++) {
+//         sonuc += (b > 0) ? a : -a;
+//     }
+
+//     // İşaret kontrolü
+//     if ((a < 0 && b > 0) || (a > 0 && b < 0)) {
+//         sonuc = -sonuc;
+//     }
+
+//     console.log("Çarpma Sonucu: " + sonuc);
+// }
+
+// // Fonksiyonu çağır
+// carpmaIslemi(A, B);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Değerleri toplamak ve sayacı takip etmek için değişkenler
+// var toplam = 0;
+// var sayac = 0;
+
+// // Kullanıcıdan değerleri al ve ortalamayı hesapla
+// while (true) {
+//     var deger = parseFloat(prompt("Bir sayı giriniz (Sıfır girmek için -0):"));
+
+//     // Girilen değer sıfır veya negatifse döngüyü sonlandır
+//     if (deger <= 0) {
+//         break;
+//     }
+
+//     // Değerleri topla ve sayacı artır
+//     toplam += deger;
+//     sayac++;
+// }
+
+// // Eğer hiç değer girilmediyse uyarı ver
+// if (sayac === 0) {
+//     console.log("Hiç değer girilmedi.");
+// } else {
+//     // Ortalamayı hesapla ve ekrana yazdır
+//     var ortalama = toplam / sayac;
+//     console.log("Girilen değerlerin ortalaması: " + ortalama.toFixed(2));
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var toplamTek = 0;
+// var toplamCift = 0;
+
+// // Kullanıcıdan 20 sayı al ve tek/çift olmalarına göre topla
+// for (var i = 1; i <= 20; i++) {
+//     var sayi = parseFloat(prompt(i + ". sayıyı giriniz:"));
+
+//     if (isNaN(sayi)) {
+//         console.log("Geçerli bir sayı girilmedi. Lütfen tekrar deneyin.");
+//         i--;
+//         continue;
+//     }
+
+//     if (sayi % 2 === 0) {
+//         // Çift sayılar
+//         toplamCift += sayi;
+//     } else {
+//         // Tek sayılar
+//         toplamTek += sayi;
+//     }
+// }
+
+// // Sonuçları ekrana yazdır
+// console.log("Tek sayıların toplamı: " + toplamTek);
+// console.log("Çift sayıların toplamı: " + toplamCift);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Kullanıcıdan iki pozitif tam sayı al
+// var sayi1 = parseInt(prompt("Birinci sayıyı giriniz:"));
+// var sayi2 = parseInt(prompt("İkinci sayıyı giriniz:"));
+
+// // OBEB'ı bulan fonksiyon
+// function obebBul(sayi1, sayi2) {
+//     if (sayi2 === 0) {
+//         return sayi1;
+//     } else {
+//         return obebBul(sayi2, sayi1 % sayi2);
+//     }
+// }
+
+// // Fonksiyonu çağır ve sonucu ekrana yazdır
+// var obebSonuc = obebBul(sayi1, sayi2);
+// console.log("OBEB(" + sayi1 + ", " + sayi2 + ") = " + obebSonuc);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var sayi = parseInt(prompt("Bir sayı giriniz:"));
+
+// // Sayının tek mi çift mi olduğunu kontrol et
+// if (isNaN(sayi)) {
+//     console.log("Geçerli bir sayı girmediniz.");
+// } else {
+//     if (sayi % 2 === 0) {
+//         console.log(sayi + " bir çift sayıdır.");
+//     } else {
+//         console.log(sayi + " bir tek sayıdır.");
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+     
+        
+</body>
+</html>
